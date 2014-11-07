@@ -16,6 +16,7 @@ a:hover{text-decoration: none;}
 #the-calcolator .ex1{width: 50%;}
 #the-calcolator h4{font-size: 13px;border: 1px solid #ccc;text-align: center;padding: 8px 0;}
 #the-calcolator input{width: 100%!important;text-align: right;font-size: 13px;}
+#the-calcolator input[type="reset"]{width: auto!important;}
 #the-calcolator .all-data{margin-top: 10px;}
 #the-calcolator .all-data dl{margin-bottom: 0;}
 #the-calcolator .all-data dl dt{text-align: left;font-weight: normal;}

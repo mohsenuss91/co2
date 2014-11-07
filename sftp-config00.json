@@ -1,21 +1,20 @@
 {
-    // sftp, ftp or ftps
-    "type": "sftp",
+    "type": "ftp",
 
     "save_before_upload": true,
     "upload_on_save": false,
     "sync_down_on_open": false,
     "sync_skip_deletes": false,
-    "sync_same_age": true,
     "confirm_downloads": false,
     "confirm_sync": true,
     "confirm_overwrite_newer": false,
     
-    "host": "162.243.213.191",
-    "user": "kossa",
-    "port": "1988",
+    "host": "92.54.17.67",
+    "user": "hkprog1",
+    "password": "co2-Wind",
+    //"port": "22",
     
-    "remote_path": "/home/kossa/www/co2",
+    "remote_path": "/",
     "ignore_regexes": [
         "\\.sublime-(project|workspace)", "sftp-config(-alt\\d?)?\\.json",
         "sftp-settings\\.json", "/venv/", "\\.svn", "\\.hg", "\\.git",
