@@ -1,1 +1,1 @@
-<?php echo "<pre>".shell_exec("git pull");
+<?php echo "<pre>".shell_exec("/usr/bin/git pull -f");
