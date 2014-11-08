@@ -4,9 +4,99 @@
             "set": 0
         },
         "Outputs": {
-            "CO2": "set * data1 * data2 * data3",
-            "KW": "set * data1 * data3 * data5",
-            "Participation": "KW * data6"
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
+        }
+    },
+    "airplane": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
+        }
+    },
+    "public-transport": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
+        }
+    },
+    "walk": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
+        }
+    },
+    "electric-bike": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
+        }
+    },
+    "electric-car": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
         },
         "Constants": {
             "data1": 7.2,
@@ -17,4 +107,5 @@
             "data6": 0.25
         }
     }
+
 }
