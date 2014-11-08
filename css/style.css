@@ -21,7 +21,7 @@ a:hover{text-decoration: none;}
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{background-color: #6AB100;color: #fff;border: none;border-bottom: 1px solid #6AB100;}
 
 /*tab-pane*/
-.tab-pane>section{margin-bottom: 30px;}
+.tab-pane>section{margin-bottom: 30px;   -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
 
 /* the-calcolator */
 #the-calcolator{font-size: 13px;padding-bottom: 50px;}

@@ -1,6 +1,13 @@
+'use strict';
+
 
 (function($){
   
+    // Load json file
+    $.getJSON("calculator.json", function(json) {
+      window.calcOBJ = json;
+    });
+
     // Slider
     $(".ex1 .mb_slider").mbSlider({
       onSlide:function(o){
@@ -12,6 +19,7 @@
         $("#"+o.id+"_val").find(".val").val($(o).mbgetVal());
       }
     });
+
     // set the slider
     $('.setVal input').on('input', function(event) {
       var _this = $(this),
@@ -27,6 +35,8 @@
       calculate(_this);
     });
 
+
+
 /*
 |------------------------------------------------------------------------------------
 | All functions
@@ -38,13 +48,13 @@ function calculate(_this){
     theLine = _this.closest("section"),
 
     // Get all data
-    data1 = theLine.find('.data1').val(),
-    data2 = theLine.find('.data2').val(),
-    data3 = theLine.find('.data3').val(),
-    data4 = theLine.find('.data4').val(),
-    data5 = theLine.find('.data5').val(),
-    data6 = theLine.find('.data6').val(),
-    theVal = theLine.find('.setVal input').val();
+    data1 = calcOBJ['car']["Constants"]["data1"],
+    data2 = calcOBJ['car']["Constants"]["data2"],
+    data3 = calcOBJ['car']["Constants"]["data3"],
+    data4 = calcOBJ['car']["Constants"]["data4"],
+    data5 = calcOBJ['car']["Constants"]["data5"],
+    data6 = calcOBJ['car']["Constants"]["data6"],
+    theVal = theLine.find('.setVal input').val(),
 
     // Get results
     result1 = theLine.find('.result1'),

@@ -1,24 +1,20 @@
 {
-    "my travel": [
-        {
-            "id": "my_travel",
-            "label": "Car",
-            "Input": {
-                "set": 0
-            },
-            "Outputs": {
-                "CO2": "set * data1 * data2 * data3",
-                "KW": "set * data1 * data3 * data5",
-                "Participation": "KW * data6"
-            },
-            "Constants": {
-                "data1": 7.2,
-                "data2": 2.47,
-                "data3": 0.01,
-                "data4": 10,
-                "data5": 10,
-                "data6": 0.25
-            }
+    "car": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "CO2": "set * data1 * data2 * data3",
+            "KW": "set * data1 * data3 * data5",
+            "Participation": "KW * data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
         }
-    ],
+    }
 }
