@@ -1,1 +1,3 @@
-<?php echo "<pre>".shell_exec("/usr/bin/git pull -f");
+<?php 
+exec('git pull -f', $output);
+var_dump($output);

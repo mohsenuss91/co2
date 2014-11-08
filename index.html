@@ -49,72 +49,6 @@
       <div class="tab-content">
         <div role="tabpanel" class="tab-pane fade" id="lifestyle">
 
-          <div class="jumbotron">
-            <section class="airplane-section">
-
-              <!-- Hidden Field -->
-              <input type="hidden" name="data1" class="data1" value="7.2">
-              <input type="hidden" name="data2" class="data2" value="2.47">
-              <input type="hidden" name="data3" class="data3" value="0.01">
-              <input type="hidden" name="data4" class="data4" value="10">
-              <input type="hidden" name="data5" class="data5" value="10">
-              <input type="hidden" name="data6" class="data6" value="0.25">
-              <!-- /Hidden Field -->
-
-              <div class="row">
-                <div class="col-sm-4">
-                  <div class="row">
-                    <div class="col-sm-2">
-                      <img src="img/airplane-icon.png" class="icon-product" alt="">
-                    </div>
-                    <div class="col-sm-10">
-                      <strong>airplane</strong>
-                      <p>How many km do you fly per year ?</p>
-                      <div class="ex1">
-                        <div id="sl_airplane"  class="mb_slider {rangeColor:'#3498db',negativeColor:'#ffcc00',maxVal:50000 ,startAt:0, grid:1}" style="display:inline-block;"></div>
-                      </div>
-                      <div class="pull-left">0 Km</div>
-                      <div class="pull-right">50.000 Km</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-5">
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <h4>Km Year</h4>
-                      <span id="sl_airplane_val" class="setVal"><input class="val" value="0" style="width:50px;" ></span>
-                    </div>
-                    <div class="col-sm-3">
-                      <h4>CO2/Kg</h4>
-                      <input type="text" name="" value="0" placeholder="" class="result1" readonly>
-                    </div>
-                    <div class="col-sm-3">
-                      <h4>kWh</h4>
-                      <input type="text" name="" value="0" placeholder="" class="result2" readonly>
-                    </div>
-                    <div class="col-sm-3">
-                      <h4>€ participation</h4>
-                      <input type="text" name="" value="0" placeholder="" class="result3" readonly>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-3 all-data">
-                  <dl class="dl-horizontal">
-                    <dt>Liter per 100 km: </dt>
-                    <dd>4.2</dd>
-                  </dl>
-                  <dl class="dl-horizontal">
-                    <dt>kg CO2/liter: </dt>
-                    <dd>2.5</dd>
-                  </dl>
-                  <dl class="dl-horizontal">
-                    <dt>kWh/liter: </dt>
-                    <dd>10,00</dd>
-                  </dl>
-                </div>
-              </div>
-            </section><!-- airplane-section -->
-          </div>
 
         </div>
         <div role="tabpanel" class="tab-pane fade in active" id="travel">
@@ -234,7 +168,7 @@
                 <div class="display-values">
                   <div class="row">
                     <div class="col-sm-2">
-                      <input class="val" value="0" >
+                      <span id="sl_car_val" class="setVal"><input class="val" value="0" style="width:50px;"></span>
                     </div>
                     <div class="col-sm-1">
                       <h4>Km Year</h4>
@@ -285,7 +219,7 @@
                 <div class="display-values">
                   <div class="row">
                     <div class="col-sm-2">
-                      <input class="val" value="0" >
+                      <span id="sl_airplane_val" class="setVal"><input class="val" value="0" style="width:50px;"></span>
                     </div>
                     <div class="col-sm-1">
                       <h4>Km Year</h4>
@@ -336,7 +270,7 @@
                 <div class="display-values">
                   <div class="row">
                     <div class="col-sm-2">
-                      <input class="val" value="0" >
+                      <span id="sl_public-transport_val" class="setVal"><input class="val" value="0" style="width:50px;"></span>
                     </div>
                     <div class="col-sm-1">
                       <h4>min day</h4>
@@ -387,7 +321,7 @@
                 <div class="display-values">
                   <div class="row">
                     <div class="col-sm-2">
-                      <input class="val" value="0" >
+                      <span id="sl_walk_val" class="setVal"><input class="val" value="0" style="width:50px;"></span>
                     </div>
                     <div class="col-sm-1">
                       <h4>min day</h4>
@@ -438,7 +372,7 @@
                 <div class="display-values">
                   <div class="row">
                     <div class="col-sm-2">
-                      <input class="val" value="0" >
+                      <span id="electric-bike_val" class="setVal"><input class="val" value="0" style="width:50px;"></span>
                     </div>
                     <div class="col-sm-1">
                       <h4>min day</h4>
@@ -481,7 +415,7 @@
                       <div id="electric-car"  class="mb_slider {rangeColor:'#3498db',negativeColor:'#ffcc00',maxVal:50000 ,startAt:0, grid:1}" style="display:inline-block;"></div>
                     </div>
                     <div class="pull-left">0 Km</div>
-                    <div class="pull-right">240 Km</div>
+                    <div class="pull-right">50.000 Km</div>
                   </div>
                 </div>
               </div>
@@ -489,7 +423,7 @@
                 <div class="display-values">
                   <div class="row">
                     <div class="col-sm-2">
-                      <input class="val" value="0" >
+                      <span id="electric-car_val" class="setVal"><input class="val" value="0" style="width:50px;"></span>
                     </div>
                     <div class="col-sm-1">
                       <h4>km year</h4>
