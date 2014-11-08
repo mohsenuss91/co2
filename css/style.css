@@ -7,28 +7,54 @@ body{font-family: 'Lato', sans-serif;}
 
 a:hover{text-decoration: none;}
 
+
 /*header*/
 #header{margin-bottom: 40px;}
 
+
 /*nav-tabs*/
 .nav-tabs{}
-.nav-tabs{text-align: center;border: none;}
+.nav-tabs{margin-bottom: 20px;text-align: center;border: none;}
 .nav-tabs>li{float: none;display: inline-block;padding: 0;margin: 0 -3px;}
 .nav-tabs>li>a{color: #6AB100;padding: 3px 50px;font-size: 14px;border: none;border-bottom: 1px solid #6AB100;border-radius: 0}
 .nav-tabs>li>a:hover{background-color: transparent;}
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{background-color: #6AB100;color: #fff;border: none;border-bottom: 1px solid #6AB100;}
 
+/*tab-pane*/
+.tab-pane>section{margin-bottom: 30px;}
+
 /* the-calcolator */
-#the-calcolator{font-size: 13px;}
+#the-calcolator{font-size: 13px;padding-bottom: 50px;}
 #the-calcolator > section {margin: 30px 0;}
 #the-calcolator .icon-product{width:50px;margin-top: 5px;}
 #the-calcolator .mb_sliderBar{width:300px;}
 #the-calcolator .mb_slider{padding: 10px 0 0 0;}
 #the-calcolator .mb_sliderEnd, #the-calcolator .mb_sliderStart{display: none!important;}
 #the-calcolator .ex1{width: 50%;}
-#the-calcolator h4{font-size: 13px;border: 1px solid #ccc;text-align: center;padding: 8px 0;}
+#the-calcolator h4{font-size: 13px;color: #333;}
 #the-calcolator input{width: 100%!important;text-align: right;font-size: 13px;}
 #the-calcolator input[type="reset"]{width: auto!important;}
 #the-calcolator .all-data{margin-top: 10px;}
 #the-calcolator .all-data dl{margin-bottom: 0;}
 #the-calcolator .all-data dl dt{text-align: left;font-weight: normal;}
+
+
+/* Green section*/
+section.green{color: #6AB100!important;}
+section.green p, section.green input{color: #333!important;}
+section.green .mb_sliderRange{background-color: #6AB100!important;}
+section.green .mb_sliderValueLabel{color: #6AB100!important;}
+
+/*display-values*/
+.display-values{margin-top: 40px;}
+.display-values input{margin-top: 15px;}
+.display-values .icon-product{margin-top: -10px!important;}
+
+/*jumbotron*/
+.jumbotron{padding: 20px!important;border-radius: 0!important;}
+.jumbotron p{font-size: 13px;}
+.jumbotron section{margin-bottom: 30px;}
+.jumbotron section:last-of-type{margin-bottom: 0;}
+.jumbotron .display-values .icon-product{margin-top: 3px!important;}
+
+
