@@ -88,54 +88,36 @@ function calculate(_this){
     getResult3(result3, result ,data6);   */
 
     // Set the Total
-    setTotal();
+    setTotal(_this);
 
 }
 
+function setTotal(_this){
+  var _totalResult1 = 0, 
+      _totalResult2 = 0,
+      _totalResult3 = 0,
+      _theTab = _this.closest(".tab-pane");
 
-// Get Result 1
-function getResult1(result1, x, y, z, a){
-  var result = parseInt(x*y*z*a);
-  result1.val(result); 
-}
-
-// Get Result 2
-function getResult2(result2, x, y, z, a){
-  var result = parseInt(x*y*z*a);
-  result2.val(result); 
-  return result;
-}
-
-// Get Result 3
-function getResult3(result3, x, y){
-  var result = parseInt(x*y);
-  result3.val(result); 
-}
-
-function setTotal(){
-  var totalResult1 = 0, 
-      totalResult2 = 0,
-      totalResult3 = 0;
 
   $('.result1').each(function() {
-      totalResult1 += parseInt($(this).val());
+      _totalResult1 += parseInt($(this).val());
   });
   
   $('.result2').each(function() {
-      totalResult2 += parseInt($(this).val());
+      _totalResult2 += parseInt($(this).val());
   });
   
   $('.result3').each(function() {
-      totalResult3 += parseInt($(this).val());
+      _totalResult3 += parseInt($(this).val());
   });
   
   // Set Values
-  $('.total-travel .totalResult1').val(totalResult1);
-  $('.total-travel .totalResult2').val(totalResult2);
-  $('.total-travel .totalResult3').val(totalResult3);
+  _theTab.find('.totalResult1').val(_totalResult1);
+  _theTab.find('.totalResult2').val(_totalResult2);
+  _theTab.find('.totalResult3').val(_totalResult3);
 
   // Set Slider 
-  $('#sl_total_travel').mbsetVal(totalResult1);
+  $('#sl_total_travel').mbsetVal(_totalResult1);
 
 }
 
