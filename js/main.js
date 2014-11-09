@@ -33,7 +33,10 @@
       event.preventDefault();
       var _this = $(this);
       calculate(_this);
+
+      // Set All Total
     });
+
 
 
 
@@ -44,13 +47,13 @@
 */
 function calculate(_this){
   var
-      theLine = _this.closest("section"), // Get the section of the element
-      theVal  = theLine.find('.setVal input').val(),
-      set     = theLine.find("input.val").val(),
-      _name   = theLine.data("name"),
-      result1 = theLine.find('.result1'),
-      result2 = theLine.find('.result2'),
-      result3 = theLine.find('.result3');
+      theLine  = _this.closest("section"), // Get the section of the element
+      theVal   = theLine.find('.setVal input').val(),
+      set      = theLine.find("input.val").val(),
+      _name    = theLine.data("name"),
+      result1  = theLine.find('.result1'),
+      result2  = theLine.find('.result2'),
+      result3  = theLine.find('.result3');
 
 
     try{ // Create all Constants
@@ -79,45 +82,41 @@ function calculate(_this){
     }
     
 
-    // Get results
-    
-
-    /* Get Results
-    getResult1(result1, theVal ,data1, data2, data3);   
-    var result = getResult2(result2, theVal, data1, data3, data5);    
-    getResult3(result3, result ,data6);   */
-
     // Set the Total
-    setTotal(_this);
+    setTotalInTab(_this);
 
 }
 
-function setTotal(_this){
-  var _totalResult1 = 0, 
+function setTotalInTab(_this){
+  var
+      _totalResult1 = 0, 
       _totalResult2 = 0,
       _totalResult3 = 0,
-      _theTab = _this.closest(".tab-pane");
+      theTab        = _this.closest(".tab-pane"),
+      _isGreen      = _this.closest('section.green').length == 1,
+      greenSection  = (_isGreen) ? 'section.green ' : '',
+      greenTotal    = (_isGreen) ? '.jumbotron>section.green ' : '.jumbotron>section:not(.green) ';
 
 
-  $('.result1').each(function() {
+  theTab.find(greenSection + '.result1').each(function() {
       _totalResult1 += parseInt($(this).val());
   });
   
-  $('.result2').each(function() {
+  theTab.find(greenSection + '.result2').each(function() {
       _totalResult2 += parseInt($(this).val());
   });
   
-  $('.result3').each(function() {
+  theTab.find(greenSection + '.result3').each(function() {
       _totalResult3 += parseInt($(this).val());
   });
   
-  // Set Values
-  _theTab.find('.totalResult1').val(_totalResult1);
-  _theTab.find('.totalResult2').val(_totalResult2);
-  _theTab.find('.totalResult3').val(_totalResult3);
+  // Set Values into the inputs
+  theTab.find(greenTotal + '.totalResult1').val(_totalResult1);
+  theTab.find(greenTotal + '.totalResult2').val(_totalResult2);
+  theTab.find(greenTotal + '.totalResult3').val(_totalResult3);
 
-  // Set Slider 
-  $('#sl_total_travel').mbsetVal(_totalResult1);
+  // Set the Value into the Slider 
+  theTab.find(greenTotal + '.sl_total_travel').mbsetVal(_totalResult1);
 
 }
 
