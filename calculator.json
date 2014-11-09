@@ -106,6 +106,384 @@
             "data5": 10,
             "data6": 0.25
         }
+    },
+    "electricity": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
+        }
+    },
+    "heating": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
+        }
+    },
+    "mortgage-rent": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
+        }
+    },
+    "green-power": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
+        }
+    },
+    "wood-solar": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
+        }
+    },
+    "home-insulation": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
+        }
+    },
+    "food": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
+        }
+    },
+    "clothes-shoes": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
+        }
+    },
+    "paper-media-books": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
+        }
+    },
+    "electronic-others": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
+        }
+    },
+    "regional-seasonal-food": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
+        }
+    },
+    "organic-food": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
+        }
+    },
+    "second-hand-stuff": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
+        }
+    },
+    "ebooks-epapers": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
+        }
+    },
+    "social-networks-internet": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
+        }
+    },
+    "watch-tv": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
+        }
+    },
+    "hang-out": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
+        }
+    },
+    "cafes-restaurants-hotels": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
+        }
+    },
+    "birthday-parties-events": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
+        }
+    },
+    "cinema": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
+        }
+    },
+    "workout-sports": {
+        "Input": {
+            "set": 0
+        },
+        "Outputs": {
+            "co2": "set*data1*data2*data3",
+            "kw": "set*data1*data3*data5",
+            "participation": "kw*data6"
+        },
+        "Constants": {
+            "data1": 7.2,
+            "data2": 2.47,
+            "data3": 0.01,
+            "data4": 10,
+            "data5": 10,
+            "data6": 0.25
+        }
     }
 
 }

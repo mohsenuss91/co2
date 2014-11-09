@@ -118,6 +118,37 @@ function setTotalInTab(_this){
   // Set the Value into the Slider 
   theTab.find(greenTotal + '.sl_total_travel').mbsetVal(_totalResult1);
 
+  // Set the Total
+  setTheTotal(_isGreen);
+
+}
+
+function setTheTotal(_isGreen){
+
+  var
+    _theTotalResult1 = 0,
+    _theTotalResult2 = 0,
+    _theTotalResult3 = 0,
+    theTotalField    = $('.jumbotron.the-total'),
+    greenTotal       = (_isGreen) ? 'section.green ' : 'section:not(.green) ';
+
+  // Get Totals
+  $('.jumbotron:not(.the-total) ' + greenTotal).each(function() {
+      _theTotalResult1 += parseInt($(this).find('.totalResult1').val());
+      _theTotalResult2 += parseInt($(this).find('.totalResult2').val());
+      _theTotalResult3 += parseInt($(this).find('.totalResult3').val());
+  });
+
+
+  // Set Totals in Fields
+  theTotalField.find(greenTotal + ' .totalResult1').val(_theTotalResult1);
+  theTotalField.find(greenTotal + ' .totalResult2').val(_theTotalResult2);
+  theTotalField.find(greenTotal + ' .totalResult3').val(_theTotalResult3);
+
+
+  // Set Total in the slider
+  theTotalField.find(greenTotal + '.sl_total_travel').mbsetVal(_theTotalResult1);
+
 }
 
 })(jQuery);
