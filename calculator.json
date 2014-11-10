@@ -391,9 +391,9 @@
             "participation": "kw*data6"
         },
         "Constants": {
-            "data1": 100,  //watt
-            "data2": 365,  //days year
-            "data3": 0.01, //factor
+            "data1": 100,
+            "data2": 365,
+            "data3": 0.001,
             "data4": 0,
             "data5": 0.5,
             "data6": 0.25
@@ -404,16 +404,16 @@
             "set": 0
         },
         "Outputs": {
-            "co2": "set*data1*data2*data3",
-            "kw": "set*data1*data3*data5",
+            "kw": "set*data1*data2*data3",
+            "co2": "kw*data5",
             "participation": "kw*data6"
         },
         "Constants": {
-            "data1": 7.2,
-            "data2": 2.47,
-            "data3": 0.01,
-            "data4": 10,
-            "data5": 10,
+            "data1": 50,
+            "data2": 52,
+            "data3": 0.001,
+            "data4": 0,
+            "data5": 0.5,
             "data6": 0.25
         }
     },
@@ -422,16 +422,16 @@
             "set": 0
         },
         "Outputs": {
-            "co2": "set*data1*data2*data3",
-            "kw": "set*data1*data3*data5",
+            "co2": "set*data1*data2",
+            "kw": "co2/data5",
             "participation": "kw*data6"
         },
         "Constants": {
-            "data1": 7.2,
-            "data2": 2.47,
-            "data3": 0.01,
-            "data4": 10,
-            "data5": 10,
+            "data1": 0.1686,
+            "data2": 12,
+            "data3": 0,
+            "data4": 0,
+            "data5": 0.5,
             "data6": 0.25
         }
     },
@@ -440,16 +440,16 @@
             "set": 0
         },
         "Outputs": {
-            "co2": "set*data1*data2*data3",
-            "kw": "set*data1*data3*data5",
+            "co2": "set*data1",
+            "kw": "co2/data5",
             "participation": "kw*data6"
         },
         "Constants": {
-            "data1": 7.2,
-            "data2": 2.47,
-            "data3": 0.01,
-            "data4": 10,
-            "data5": 10,
+            "data1": 0.1686,
+            "data2": 0,
+            "data3": 0,
+            "data4": 0,
+            "data5": 0.5,
             "data6": 0.25
         }
     },
@@ -458,16 +458,16 @@
             "set": 0
         },
         "Outputs": {
-            "co2": "set*data1*data2*data3",
-            "kw": "set*data1*data3*data5",
+            "co2": "set*data1*data2",
+            "kw": "co2/data5",
             "participation": "kw*data6"
         },
         "Constants": {
-            "data1": 7.2,
-            "data2": 2.47,
-            "data3": 0.01,
-            "data4": 10,
-            "data5": 10,
+            "data1": 0.1686,
+            "data2": 12,
+            "data3": 0,
+            "data4": 0,
+            "data5": 0.5,
             "data6": 0.25
         }
     },
@@ -476,16 +476,16 @@
             "set": 0
         },
         "Outputs": {
-            "co2": "set*data1*data2*data3",
-            "kw": "set*data1*data3*data5",
+            "co2": "set*data1*data2*data3*data4",
+            "kw": "co2/data5",
             "participation": "kw*data6"
         },
         "Constants": {
-            "data1": 7.2,
-            "data2": 2.47,
-            "data3": 0.01,
-            "data4": 10,
-            "data5": 10,
+            "data1": 1.4,
+            "data2": 52,
+            "data3": 60,
+            "data4": 0.001,
+            "data5": 0.5,
             "data6": 0.25
         }
     }
