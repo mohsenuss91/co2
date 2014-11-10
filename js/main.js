@@ -37,6 +37,25 @@
       // Set All Total
     });
 
+    // Click on reset
+    $("a.reset").click(
+      function(){
+        var
+          _this = $(this),
+          thisTab =_this.closest(".tab-pane");
+        thisTab.find('input').each(function(){
+          $(this).val(0);
+        });
+
+         thisTab.find('.mb_slider').each(function(){
+          $(this).mbsetVal(0);
+        });
+
+         return false;
+
+      }
+    );
+
 
 
 
