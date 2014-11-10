@@ -29,22 +29,7 @@
 
   <body>
 
-    <div id="top">
-      <div class="container">
-        <ul class="list-inline">
-          <li><a href="#" class="active">home</a></li>
-          <li><a href="#">my life style calculator</a></li>
-          <li><a href="#">my zero emission product</a></li>
-          <li><a href="#">about zero emission</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <header id="header">
-      <div class="container">
-        <a href="#"><img src="img/logo.png" alt=""></a>
-      </div>
-    </header>
+    <?php include('header.php') ?>
 
     <div class="container" id="the-calcolator">
       <!-- Nav tabs -->
