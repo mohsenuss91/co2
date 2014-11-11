@@ -59,6 +59,8 @@ section.green .mb_sliderValueLabel{color: #6AB100!important;}
 
 /*jumbotron*/
 .jumbotron{padding: 20px!important;border-radius: 0!important;}
+.jumbotron .mb_slider{position: relative;}
+.jumbotron .mb_slider:after{content: ''; position: absolute;width: 100%;height: 100%;left: 0;top: 0;}
 .jumbotron p{font-size: 13px;}
 .jumbotron section{margin-bottom: 30px;}
 .jumbotron section:last-of-type{margin-bottom: 0;}
